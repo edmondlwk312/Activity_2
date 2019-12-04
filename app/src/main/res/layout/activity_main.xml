@@ -8,7 +8,6 @@
 
     <Button
         android:id="@+id/buttonReset"
-        style="@style/MyButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -17,6 +16,7 @@
         android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+    <!--        style="@style/MyButtonStyle"-->
 
     <EditText
         android:id="@+id/editTextWeight"
@@ -62,8 +62,8 @@
         android:contentDescription="@string/picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextHeight"
-        app:srcCompat="@drawable/empty" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+<!--        app:srcCompat="@drawable/empty" />-->
 
     <TextView
         android:id="@+id/textViewBMI"
@@ -82,7 +82,6 @@
 
     <Button
         android:id="@+id/buttonCalculate"
-        style="@style/MyButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -91,4 +90,5 @@
         android:text="@string/calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+<!--    style="@style/MyButtonStyle"-->
 </androidx.constraintlayout.widget.ConstraintLayout>
