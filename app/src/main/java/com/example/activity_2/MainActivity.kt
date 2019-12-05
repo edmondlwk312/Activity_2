@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.IntegerRes
+import kotlin.math.pow
 
 class MainActivity : AppCompatActivity()
 {
@@ -25,7 +26,21 @@ class MainActivity : AppCompatActivity()
 
         buttonForCalculate.setOnClickListener(View.OnClickListener
         {
-            View -> viewBMI.text = "BMI: " + ((weight() / (height() * height()))).toString()
+            View -> viewBMI.text = "BMI: " + (weight().toDouble() / ((height().toDouble()/ 100).pow(2))).toDouble()
+            //View -> viewBMI.text = "BMI: " + (weight() / ((height() / 100) * (height() / 100))).toString()
+
+//            if(viewBMI.text < 20)
+//            {
+//                print("Not enough space")
+//            }
+//            else if(viewBMI.text > 20)
+//            {
+//                print("Pig")
+//            }
+//            else
+//            {
+//                print("shit")
+//            }
         })
 
         buttonForReset.setOnClickListener(View.OnClickListener
